@@ -6,8 +6,19 @@ body{
     font-size:18px;
 }
 
+p::first-letter{
+    font-size:1.5em;
+}
+
 #lazy {
     color: royalblue;
+}
+#movie{
+    font-size: 14px;
+}
+
+#movieheading{
+    color:yellow
 }
 
 #excited {
@@ -24,4 +35,9 @@ h4 {
 
 a{
     text-decoration: none;
+}
+
+ol{
+    display: flex;
+    flex-direction: column-reverse;
 }
