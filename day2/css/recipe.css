@@ -12,10 +12,10 @@ a{
 h1, h2, h3, h4, h5, h6 {
     font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
     font-size: 18pt;
-    font-style:bold;
+    font-weight: bold;
     text-decoration: underline;
-    background-color: #F0F0F0 (red=240, green=240, blue=240);
-    color: #A4A400 (red=164, green=164, blue=0);
+    background-color: #F0F0F0;
+    color: #A4A400;
 }
 
 h1{
