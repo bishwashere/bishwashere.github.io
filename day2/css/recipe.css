@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 h1{
     text-align: center;
     font-size: 18pt;
-    font-style: bold;
+    font-weight: bold;
 }
 
 abbr { 
