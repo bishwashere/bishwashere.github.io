@@ -1,0 +1,48 @@
+body {
+    background-color:white;
+    color:#404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+}
+
+a{
+    color: #A4A400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    font-style:bold;
+    text-decoration: underline;
+    background-color: #F0F0F0 (red=240, green=240, blue=240);
+    color: #A4A400 (red=164, green=164, blue=0);
+}
+
+h1{
+    text-align: center;
+    font-size: 18pt;
+    font-style: bold;
+}
+
+abbr { 
+    display: inline;
+    text-decoration: underline;
+  }
+
+.strikethrough{
+    text-decoration: line-through;
+}
+
+#comments > p {
+    background-color: rgba(255, 255, 0, 0.548);
+    font-style:italic;
+}
+
+footer {
+    font-family:monospace;
+}
+
+footer > p {
+    text-align: right;
+    width: 350px;
+}
