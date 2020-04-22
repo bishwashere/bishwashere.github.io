@@ -1,212 +1,104 @@
-body {
-	font-family: 'Alegreya', serif;
-	margin: 0;
-	padding: 0;
-	line-height: 24px;
-	background: #f8f6f5;
-	font-size: 18px;
-	background-image: url("../images/grandma-lemon-pie-3.jpg");
-	background-color: #cccccc;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
+/**
+ * Profile image component
+ */
+ .profile-header-container{
+    margin: 0 auto;
+    text-align: center;
+    float: left;
 }
 
-a {
-	outline: none !important;
-	text-decoration: none;
-	color: inherit;
-	-webkit-transition: 0.2s all ease-in-out;
-	-o-transition: 0.2s all ease-in-out;
-	transition: 0.2s all ease-in-out;
+.profile-header-img {
+    padding: 5px;
 }
 
-a:hover {
-	text-decoration: none;
+.profile-header-img > img.img-circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #51D2B7;
 }
 
-a:focus {
-	text-decoration: none;
-	color: inherit;
+.profile-header {
+    margin-top: 20px;
 }
 
-.separator-post {
-	height: 1px;
-	background: #e4d9d1;
-	margin-bottom: 30px;
+.mood-img  {
+    width: 40px;
+    height: 40px;
 }
 
-.recipe-heading {
-	padding: 20px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	display: -webkit-box;
+.html-check {
+    margin-left: 450px;
+}
+/**
+ * Ranking component
+ */
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align
+    : center;
 }
 
-.recipe-heading .heading {
-	overflow: hidden;
-	width: 80%;
+.rank-label-Header {
+    margin-top: 19px;
+    /* z-index: 1000; */
+    text-align: center;
 }
 
-.recipe-print {
-	text-align: center;
-	margin-top: 8px;
-	overflow: hidden;
-	width: 20%;
-	position: relative;
-	z-index: 66;
+.label.label-default.rank-label {
+    background-color: rgb(81, 210, 183);
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
 }
 
-.print-button {
-	display: inline-block;
-	font-weight: 400;
-	font-size: 16px;
+.w3-container:after{content:"";display:table;clear:both}
+.w3-teal{color:#fff!important;background-color:#009688!important}
+.w3-half-left{
+    width:49.66666%;
+    float: left;
+}
+.w3-half-right{
+    width:49.66666%;
+    float: right;
+}
+.w3-full{
+    width:99.66666%;
+}
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
+.w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+
+.img-home{ 
+    float: right;
+    margin-right: 10px;
 }
 
-.recipe-image .stretch {
-	width: 100%;
-	height: 100%;
-	margin-bottom: -8px;
+.header-title{ 
+font-size: 26px;
 }
 
-.recipe-specification {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	background: #000000;
-	color: #ffffff;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.home{ 
+    float: right;
+    margin-right: 10px;
+    color:#fff
 }
 
-.recipe-specification li {
-	min-width: 144px;
-	font-weight: 400;
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	text-align: center;
-	border-right: 1px solid #2c2c2c;
-	border-bottom: 1px solid #2c2c2c;
-	padding: 16px 0;
-	-webkit-transition: 0.2s all ease-in-out;
-	-o-transition: 0.2s all ease-in-out;
-	transition: 0.2s all ease-in-out;
-}
+.column {
+    float: left;
+    padding: 20px;
+  }
 
-.recipe-specification li:last-child {
-	border-right: none;
-}
-
-.recipe-specification li span {
-	color: #aa9f9a;
-}
-
-.recipe-specification li:hover {
-	background: #333333;
-}
-
-.recipe-detail-body {
-	overflow: hidden;
-	background: #ffffff;
-	padding: 25px 40px;
-	color: #000000;
-}
-
-.recipe-detail-body p {
-	line-height: 26px;
-	word-wrap: break-word;
-}
-
-.recipe-detail-body .rating-box {
-	display: inline-block;
-	padding: 15px 0 0 0;
-	float: right;
-	width: auto;
-	font-size: 24px;
-}
-
-.recipe-detail-body .ingredients {
-	margin-bottom: 52px;
-	border: 1px solid #e4d9d1;
-	padding: 15px;
-}
-
-.recipe-detail-body .ingredients li {
-	font-size: 20px;
-	display: inline-block;
-	width: 32.5%;
-	line-height: 38px;
-}
-
-.recipe-detail-body .recipe-steps .recipe-steps h3 {
-	margin-bottom: 20px;
-}
-
-.recipe-detail-body .recipe-steps .recipe-steps h3.lined {
-	margin-bottom: 30px;
-	padding: 2px 0;
-}
-
-.recipe-detail-body .recipe-steps .recipe-steps h3.lined:after {
-	margin-top: 10px;
-}
-
-.lined:after {
-	content: "";
-	display: inline-block;
-	width: 45%;
-	height: 1px;
-	position: absolute;
-	background: #e7e3e1;
-	margin-left: 20px;
-	margin-top: 15px;
-}
-
-.steps-list {
-	padding-left: 0;
-}
-
-.steps-list li {
-	clear: both;
-	margin-bottom: 35px;
-	list-style: none;
-}
-
-.steps-list .step-single {
-	overflow: hidden;
-}
-
-.steps-list .step-image {
-	float: left;
-	margin-right: 30px;
-	width: 30%;
-	margin-bottom: 10px;
-}
-
-.steps-list .step-image img {
-	max-width: 100%;
-}
-
-.steps-list .step-detail {
-	overflow: hidden;
-}
-
-.steps-list .step-detail h3 {
-	margin-top: 5px;
-}
+  .header-title-description {
+    padding: 50px;
+  }
 
 .comment-body {
 	margin-bottom: 52px;
 	border: 1px solid #e4d9d1;
-	padding: 15px;
+    padding: 15px;
+    margin-left: 52px;
+    margin-right: 52px;
 }
 
 .comment-body .avatar {
@@ -217,6 +109,7 @@ a:focus {
 	border-bottom: 1px solid #e4d9d1;
 	vertical-align: middle;
 }
+  
 
 .footer {
 	background-color: #292c2f;
@@ -224,3 +117,4 @@ a:focus {
 	text-align: center;
 	padding: 45px;
 }
+  /* Clear floats after the columns */

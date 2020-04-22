@@ -36,6 +36,13 @@
 .rank-label-container {
     margin-top: -19px;
     /* z-index: 1000; */
+    text-align
+    : center;
+}
+
+.rank-label-Header {
+    margin-top: 19px;
+    /* z-index: 1000; */
     text-align: center;
 }
 
@@ -55,6 +62,9 @@
     width:49.66666%;
     float: right;
 }
+.w3-full{
+    width:99.66666%;
+}
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
 .w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
 .w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
@@ -62,6 +72,10 @@
 .img-home{ 
     float: right;
     margin-right: 10px;
+}
+
+.header-title{ 
+font-size: 26px;
 }
 
 .home{ 
@@ -74,5 +88,33 @@
     float: left;
     padding: 20px;
   }
+
+  .header-title-description {
+    padding: 50px;
+  }
+
+.comment-body {
+	margin-bottom: 52px;
+	border: 1px solid #e4d9d1;
+    padding: 15px;
+    margin-left: 52px;
+    margin-right: 52px;
+}
+
+.comment-body .avatar {
+	height: 20px;
+}
+
+.comment-body .comment-meta {
+	border-bottom: 1px solid #e4d9d1;
+	vertical-align: middle;
+}
   
+
+.footer {
+	background-color: #292c2f;
+	color: #fff;
+	text-align: center;
+	padding: 45px;
+}
   /* Clear floats after the columns */
