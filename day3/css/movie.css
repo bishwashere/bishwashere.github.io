@@ -1,0 +1,102 @@
+body {
+    margin: auto;
+    width: 60vw;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body > div {
+    float: left;
+    position: relative;
+}
+
+main{
+    border-radius: 8px;
+    border: 2px solid rgb(166, 168, 163);
+}
+
+#overview > img{
+    width: 100%;
+}
+
+#banner{
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-repeat: repeat;
+}
+
+#banner >img {
+    width: 60vw;
+}
+
+/* Height of heading */
+#rotten {
+    height: 40px;
+    background-image: url(../images/rbg.png);
+    background-size: contain;
+    border-radius:5px 5px;
+    width: 100%;
+}
+
+dl{
+    margin: 0;
+    background-color: rgb(134, 214, 88);
+}
+
+/* The height 100% matches with the size of <div> which has id as #rotten*/
+#rotten > img {
+    width:50px;
+    height:100%;
+}
+
+/* Holds movie picture and STARRING details */
+#overview {
+    width: 33%;
+    top: 0%;
+    float:right;
+}
+
+#comments{
+    width: 66%;
+    overflow: hidden
+}
+
+
+#comments img{
+    width: 11px;
+    height: 11px;
+    
+}
+
+/* Holds comments + user details */
+#comments > div {
+    width: 40%;
+    float: left;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(166, 168, 163);
+    background-color: rgb(221, 221, 139);
+}
+
+main > p {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(134, 214, 88);
+}
+
+h1{
+    text-align:center;
+}
+
+footer{
+    position: relative;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+}
