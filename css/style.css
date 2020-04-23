@@ -30,6 +30,21 @@
 .html-check {
     margin-left: 450px;
 }
+.html-footer {
+    width: 100vw;
+    display: inline;
+    position: relative;
+    bottom: 0px;
+    height: 55px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    background-color:#fff!important
+}
+
+.html-validator  {
+    height: 50px;
+    margin-left: 350px;;
+}
 /**
  * Ranking component
  */
@@ -118,3 +133,98 @@ font-size: 26px;
 	padding: 45px;
 }
   /* Clear floats after the columns */
+
+
+  .movie-reviews{
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    margin-top: 60px;
+    padding: 30px;
+    background: #fff;
+}
+.movie-img{
+    width: 40%;
+}
+.movie-img img { 
+    width: 453px;
+}
+
+.movie-desc{
+    width: 60%;
+    padding-right: 45px;
+}
+
+.movie-detail{
+    padding-left: 14px;
+    border: 1px solid #e4d9d1;
+}
+
+.movie-rate {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #405266;
+    border-bottom: 1px solid #405266;
+    margin-bottom: 70px;
+}
+
+.movie-rate .rate {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.movie-rate .rate i {
+    font-size: 36px;
+    color: #f5b50a;
+}
+.movie-rate .rate p {
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 11px;
+}
+.movie-rate .rate-star {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    border-left: 1px solid #405266;
+    padding-left: 30px;
+    height: 54px;
+}
+.movie-rate .rate-star p{
+    margin-right: 20px;
+}
+.movie-rate .rate p span {
+    font-size: 15px;
+    font-weight: 400;
+}
+.movie-rate .rate p span.rv {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.grid-box{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+
+.comment{
+    background-color: #fff;
+    padding: 30px;
+}
+
+/*hello*/

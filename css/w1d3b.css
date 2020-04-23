@@ -1,0 +1,149 @@
+
+*{
+    box-sizing: border-box;
+}
+.review p:first-child, .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.bodymovie{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0px;
+    padding: 0px;
+    background: url(../images/background.png) repeat center center;
+}
+.header-movie-review{
+    text-align: center;
+    background: url(../images/bannerbg.png) ;
+}
+
+.home{ 
+    float: right;
+    margin-right: 10px;
+    color:#fff
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size:24pt;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 0 #999999;
+}
+.box-layout{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 550px 250px;
+    grid-template-rows: auto;
+    overflow: hidden;
+    border: 4px solid grey;
+    border-radius: 20px;
+}
+.box-right-column{
+    background-color: #A2B964;
+    padding-bottom: 40px;
+}
+.box-left-column{
+    padding-bottom: 40px;
+}
+.movie-review{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.review-content{
+    column-count: 2;
+    column-gap: 1em;
+    position: relative;
+    margin: 0 2%;
+}
+.review-col1, .review-col2{
+    width: 47%;
+    float: left;
+}
+.review-col1{
+    margin: 0 2%;
+}
+.review-col2{
+    margin-right: 2%;
+}
+.review-title{
+    font-size: 48pt;
+    height: 83px;
+    line-height: 83px;
+    color: red;
+    font-weight: bold;
+    background: url(../images/rbg.png) repeat-x center top;
+}
+.review-title img{
+    float:left;
+}
+.review-content p{
+    padding: 0;
+    font-size: 8pt;
+    border-radius: 10px;
+    font-style: italic;
+}
+.review-content p img{
+    float: left;
+    margin-right: 5px;
+}
+.movie-poster{
+
+}
+p.movie-quote{
+    font-style: normal;
+    font-weight: bold;
+    padding: 8px;
+    width: 100%;
+    background: #E8DC9B;
+    border: 2px solid grey;
+}
+.pager{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    background-color: #A2B964;
+}
+.name{
+    font-style: normal;
+}
+
+.movie-details{
+    padding: 10pt;
+}
+
+.movie-details ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.movie-details dd{
+    margin-bottom: 10pt;
+}
+.movie-details dt{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.html-css-validator{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.html-validator  {
+    height: 50px;
+    margin-left: 350px;;
+}

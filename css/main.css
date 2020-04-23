@@ -28,7 +28,9 @@
 }
 
 .html-check {
+    position: relative;
     margin-left: 200px;
+    display: inline-block;
 }
 /**
  * Ranking component
@@ -118,3 +120,14 @@ font-size: 26px;
 	padding: 45px;
 }
   /* Clear floats after the columns */
+  .html-footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    height: 55px;
+    background-color:#fff!important
+}
+.html-validator  {
+    height: 50px;
+    margin-left: 350px;;
+}
