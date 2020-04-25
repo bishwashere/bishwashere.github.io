@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav class="navbar navbar-dark bg-primary">
+            <div>
+                <p class="text-light">
+                    MUM Golden Done Market ::: SRM System | Products | Suppliers
+                </p>
+            </div>
+            <span class="pull-right">
+                <span class="text-light">
+                    Hello
+                </span>
+                <button>
+                    Sign Out
+                </button>
+            </span>
+                
+            
+        </nav>
+        <form style="padding-left: 20px">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="productNumber">Product Number</label>
+                    <input type="number" class="form-control" id="productNumber" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="quantity">Quantity in stock</label>
+                    <input type="number" class="form-control" id="quantity"  placeholder="0">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="productName">Name</label>
+                    <input type="text" class="form-control" id="productName" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="supplierName">Supplier</label>
+                    <select id="supplierName" class="form-control">
+                        <option>MIU</option>
+                        <option>MUM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="unitPrice">Unit price</label>
+                    <input type="text" class="form-control" id="unitPrice" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="dateSupplied">Date supplied</label>
+                    <input type="date" id="dateSupplied" class="form-control" placeholder="yyyy-mm-dd">
+                    <small id="dateSuppliedHelp" class="form-text text-muted">Enter a valid date</small>
+                </div>
+            </div>
+            <div class="text-right">
+                <input type="button" value="Reset" class="btn btn-outline-dark">
+                <input type="button" value="Cancel" class="btn btn-outline-danger">
+                <input type="button" value="Add product" class="btn btn-outline-primary">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="https://validator.w3.org/check/referer">
+			<img src=".././day3/images/w3c-html.png" alt="html validator"/>
+		</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+			<img src=".././day3/images/w3c-css.png" alt="html validator"/>
+        </a>
+    </footer>
+</body>
+</html>
+
+<!-- <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" placeholder="Email" id="exampleInputEmail1" class="form-control" aria-describedby="emailHelp">
+    <small class="form-text text-muted" id="emailHelp">We will never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+    <label for="exampleInputPassword1">Password
+    <input type="password" placeholder="Password" id="exampleInputPassword1" class="form-control">
+</div> -->
