@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/w1d5.css">
+    <script src="../js/w1d5.js" type="text/javascript"></script> 
+</head>
+<body>
+    <h1> W1D5 – Lab Assignment 5 / Homework</h1>
+    <a class="home" href="../index.html">HOME</a>
+
+    <p>CLick on questions to see the solution</p>
+    <button class="collapsible">1. Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.</button>
+    <div class="content">
+
+        <div class="box-left-column">
+            <span>Find the Max between two numbers i.e 7,8</span>
+            <p>
+            <button onclick="max(7,8);">Find Max</button>
+            <span>Result:</span>
+            <span id="output"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function max(num1 ,  num2) {
+                    if(num1>num2)
+                        return num1;
+                    else
+                        return num1
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+    <button class="collapsible">2.	Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>Find the Max between three numbers i.e 7,8,121</span>
+            <p>
+                <button onclick="findMaxNumber(7,8,121);">Find Max</button>
+                <span>Result:</span>
+                <span id="output2"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function findMaxNumber() {
+                    let max = -Infinity;
+                    for (let i = 0; i < arguments.length; i++) {
+                        if (arguments[i] > max) {
+                            max = arguments[i];
+                        }
+                    }
+                    return max;
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+    <button class="collapsible">3.	Write a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>Check Weather the letter 'i' is Vowel or not</span>
+            <p>
+                <button onclick="isVowel('i');">Check Vowel</button>
+                <span>Result:</span>
+                <span id="output3"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function isVowel(c) {
+                    var result;
+                    result = c == "A" || c == "a" || c == "E" || c == "e" || c == "I" || c == "i" || c == "O" || c == "o" || c == "U" || c == "u";
+                    return result;
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+    <button class="collapsible">4. Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an input array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24. Note/Hint: Do these using Imperative programming approach (i.e. for…loop or while…loop)</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.</span>
+            <p>
+                <button onclick="sum([1,2,3,4]);">Check Sum</button>
+                <span>Sum Result:</span>
+                <span id="output4a"></span>
+                <button onclick="multiply([1,2,3,4]);">Check Multiply</button>
+                <span>Multiply Result:</span>
+                <span id="output4b"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function sum(arr) {
+                    let total = 0;
+                    for (let i in arr) {
+                        total += arr[i];
+                    }
+                    return total;
+                }
+                
+                function multiply(arr) {
+                    let total = 1;
+                    for (let i in arr) {
+                        total *= arr[i];
+                    }
+                    return total;
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+
+    <button class="collapsible">5.	Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>For example, reverse("jag testar") should return the string "ratset gaj".</span>
+            <p>
+                <button onclick="reverse('jag testar');">Find Reverse</button>
+                <span>Result:</span>
+                <span id="output5"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function reverse(oldstr) {
+                    let reverseStr='';
+                    for (let i = oldstr.length - 1; i >= 0; i--) { 
+                        reverseStr += oldstr[i];
+                    }
+                    return reverseStr;
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+
+    <button class="collapsible">6.	Write a function findLongestWord() that takes an array of words and returns the length of the longest one.</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>Find the findLongestWord() i.e owais ,obina ,Maharishi, john , alice</span>
+            <p>
+                <button onclick="findLongestWord(['owais' ,'obina' ,'Maharishi']);">Find Longest Word</button>
+                <span>Result:</span>
+                <span id="output6"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function findLongestWord(strArray) {
+                    let word = null;
+                    let lw = 0;
+                    strArray.forEach(function (str) {
+                        if (lw < str.length) {
+                            lw = str.length;
+                            word = str;
+                        }
+                    });
+                    return word;
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+    <button class="collapsible">7.	Write a function filterLongWords() that takes an array of words and an integer i and returns a new array containing only those words that were longer than i characters.</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span> FilterLongWords i.e owais ,obina ,Maharishi, john , alice with length greater then 4.</span>
+            <p>
+                <button onclick="filterLongWords(['owais' ,'obina' ,'Maharishi','john','alice'],4);">Find Max</button>
+                <span>Result:</span>
+                <span id="output7"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function filterLongWords(strArray, intVal) {
+                    let word = new Array();
+                    let lw = 0;
+                    strArray.forEach(function (str) {
+                        if (intVal < str.length) {
+                            word.push(str);
+                        }
+                    });
+                    return word;
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+    <button class="collapsible">8.	Write a function named, computeSumOfSquares, that takes as input, an array of numbers and calculates and returns the sum of the squares of each number in the input array. E.g. computeSumOfSquares([1,2,3]) should be computed as 12 + 22 +32 = 14. Note: Write your Javascript code without using Imperative programming. i.e. Do NOT use any explicit looping construct; instead use functional programming style/approach.</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>E.g. computeSumOfSquares([1,2,3]) should be computed as 12 + 22 +32 = 14</span>
+            <p>
+                <button onclick="computeSumOfSquares([1,2,3]);">Compute Sum Of Squares</button>
+                <span>Result:</span>
+                <span id="output8"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function computeSumOfSquares(arr){
+                    let r = arr.reduce(function (a, b) {
+                        return a+(b*b);
+                    })
+                    return r
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+    <button class="collapsible">9.	Write a function named, printOddNumbersOnly, that takes as input, an array of integral numbers and it finds and prints only the numbers which are odd.</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>Find Odd Numbers i.e 1,2,3,8,4,7,6,9</span>
+            <p>
+                <button onclick="printOddNumbersOnly([1,2,3,8,4,7,6,9]);">Find Odd Numbers</button>
+                <span>Result:</span>
+                <span id="output9"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function printOddNumbersOnly(intArray){
+                    for(let i=0; i < intArray.length; i++){
+                        if((intArray[i] % 2) == 0){
+                            continue;
+                        }else{
+                            console.log(intArray[i] +" is Odd Number");
+                        }
+                    }
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+
+    <button class="collapsible">10.	Write a function named, computeSumOfSquaresOfEvensOnly, that takes as input, an array of integral numbers and calculates and returns the sum of the squares of only the even numbers in the input array. E.g. computeSumOfSquaresOfEvensOnly ([1,2,3,4,5]) should be computed as 22 +42 = 20.</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>E.g. computeSumOfSquaresOfEvensOnly ([1,2,3,4,5]) should be computed as 4 +16 = 20.</span>
+            <p>
+                <button onclick="computeSumOfSquaresOfEvensOnly([1,2,3,4,5]);">Compute Sum Of Squares Of Events</button>
+                <span>Result:</span>
+                <span id="output10"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function computeSumOfSquaresOfEvensOnly(intArray){
+                    let total =0;
+                    for(let i=0; i < intArray.length; i++){
+                        if((intArray[i] % 2) == 0){
+                            total+=intArray[i]*intArray[i]
+                        }
+                    }
+                    return total;
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+    <button class="collapsible">11.	Using the Array.reduce(…) function, re-implement your functions, sum(…) and multiply(…) (defined in Problem 4 above) without using Imperative programming. i.e. Do NOT use any explicit looping construct; instead use functional programming style/approach. </button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>E.g. sumUsingReduce([1,2,3,4]) =10, multiplyUsingReduce([1,2,3,4])=24</span>
+            <p>
+                <button onclick="sumUsingReduce([1,2,3,4]);">Sum Using Reduce</button>
+                <span>Sum Result:</span>
+                <span id="output11a"></span>
+                <button onclick="multiplyUsingReduce([1,2,3,4]);">Multiply Using Reduce</button>
+                <span>Multiply Result:</span>
+                <span id="output11b"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function sumUsingReduce(arr) {
+                    let r = arr.reduce(function (a, b) {
+                        return a+b;
+                      })
+                    return r
+                }
+                
+                function multiplyUsingReduce(arr) {
+                    let r = arr.reduce(function (a, b) {
+                        return a*b;
+                      })
+                    return r
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+    <button class="collapsible">12.	Implement Javascript code for a function named, findSecondBiggest, which takes as input, an array of numbers and finds and returns the second biggest of the numbers. For example, findSecondBiggest([1,2,3,4,5]) should return 4. And findSecondBiggest([19,9,11,0,12]) should return 12. (Note: Do not use sorting!)</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>E.g. FindSecondBiggest([19,9,11,0,12]) should return 12</span>
+            <p>
+                <button onclick="findSecondBiggest([19,9,11,0,12]);">Find Second Biggest</button>
+                <span>Result:</span>
+                <span id="output12"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function findSecondBiggest(arr) {
+                    let max =0, secondMax = 0;
+                
+                    for (const value of arr) {
+                        if (value > max) {
+                            [secondMax, max] = [max, value]
+                        } else if (value < max && value > secondMax) {
+                            secondMax = value;
+                        }
+                    }
+                
+                    return secondMax;
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+
+    <button class="collapsible">13.	Write a function named printFibo, that takes as input, a given length, n, and any two starting numbers a and b, and it prints-out the Fibonacci sequence, e.g. (0, 1, 1, 2, 3, 5, 8, 13, 21, 34,…) of the given length, beginning with a and b. (e.g. printFibo(n=1, a=0, b=1), prints-out: "0", as output; printFibo(n=2, a=0, b=1), prints-out: "0, 1", as output; printFibo(n=3, a=0, b=1), prints-out: "0, 1, 1", as output; printFibo(n=6, a=0, b=1), prints-out: "0, 1, 1, 2, 3, 5", as output; and printFibo(n=10, a=0, b=1), prints-out: "0, 1, 1, 2, 3, 5, 8, 13, 21, 34", as output).</button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>Print Fibonaci Series E.g. (0, 1, 1, 2, 3, 5, 8, 13, 21, 34,…) </span>
+            <p>
+                <button onclick="printFibo(9, 0, 1 );">Print Fibonaci Series</button>
+                <span>Result:</span>
+                <span id="output13"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                function printFibo(n, a, b ){
+                    if(n>0){
+                        console.log(a);
+                    }
+                    if(n>1){
+                        console.log(b);
+                    }
+                    for (let i = 2; i < n; i++) {
+                        let r = a+b;
+                        a=b;
+                        b=r;
+                        console.log(r);
+                    }
+                }
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+
+    <button class="collapsible">14.	Refer to your work on Lab Assignment 4. Add Javascript code to work with your 2 HTML forms as follows:</button>
+    <div class="content">           
+            <p>
+                <span>a. Login Form: Add code such that when the Submit button is clicked, the values entered in the input fields are printed to the Console.</span>
+                <br/>
+                <br/>
+                <a href="../w1d4/loginForm.html">Login Form</a>
+                
+            </p>
+            <p>
+                <span>b. New Product Form: Add code such that when the Submit button is clicked, the values entered in the input fields are displayed in a pop-up window.</span>
+                <br/>
+                <a href="../w1d4/productForm.html">New Product Form</a>
+            </p>
+    
+    </div>
+
+
+    <button class="collapsible">15.	Using JavaScript and HTML and CSS, implement a webpage that displays a working, ticking counter Clock, that counts/displays the current Date and time of the browser host, in the format: 2019-11-4 12:16:01  </button>
+    <div class="content">
+        <div class="box-left-column">
+            <span>Ticking counter Clock</span>
+            <p>
+                <button onclick="">Show Ticking counter Clock</button>
+                <span>Time:</span>
+                <span id="output15"></span>
+            </p>
+        </div>
+
+        <div class="box-right-column">
+            <pre>
+                &lt;script&gt;
+                setInterval(() => {
+                    let now = new Date();
+                    console.log(now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate()+" " +now.getHours()+":"+now.getMinutes()+":"+now.getSeconds());
+                }, 1000)
+                &lt;/script&gt;
+            </pre>
+        </div>
+    </div>
+    
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+
+</body>
+</html>
