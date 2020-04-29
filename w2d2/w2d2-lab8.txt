@@ -9,7 +9,6 @@ x= 1;
     var a = 5;
     var b = 10;
     var c = function(a, b, c) {
-    var x = 10;
     document.write(x);
     document.write(a);
     var f = function(a, b, c) {
@@ -26,9 +25,9 @@ x= 1;
     document.write(x);
     }
 
-Answer: 10 8 8 9 10 1 
-Explanation: c(8,9,10) is called first and it prints, x 10 , a 8 , and then it calls f(8,9,10) and inside this function 8 is assigned to b and prints b then in next step c is assigned to b, but remember then its inside the function f scope. After executing f , it prints 9 for b. At last it prints b 10 and x 1 as initialized.
-   
+Answer: undefined 8 8 9 10 1 
+Explanation: c(8,9,10) is called first and it prints, x undefined , a 8 , and then it calls f(8,9,10) and inside this function 8 is assigned to b and prints b then in next step c is assigned to b, but remember then its inside the function f scope. After executing f , it prints 9 for b. At last it prints b 10 and x 1 as initialized.
+ 
 
 Q2. Define Global Scope and local Scope:
 	Global Scope:
