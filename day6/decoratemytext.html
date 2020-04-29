@@ -12,7 +12,8 @@
 		-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 
-		<!-- link to your script file here -->
+        <!-- link to your script file here -->
+        <script src="./js/decoratemytext.js"></script>
 		
 	</head>
 
@@ -20,8 +21,26 @@
 		<h1>Text Decorator</h1>
 		
 		<div>
-			<img src="decorated.gif" alt="very decorated!" />
-		</div>
+			<img src="./img/decorated.gif" alt="very decorated!" />
+        </div>
+        <div style="margin: 15px;">
+            <label for="textarea"> Enter text</label>
+            <br>
+            <textarea rows=8 cols=25 id="textarea"></textarea>
+        </div>
+
+        <div style="border: 1px solid green; padding: 15px">
+            <button onclick="biggerText()">Bigger Decorations!</button>
+            <br>
+            <br>
+            <button onclick="incrementText()" style="font-size: 12pt;">Increment Decorations!</button>
+            <br>
+            <br>
+
+            <input type="checkbox" onchange="alert(this)" id="checkbox">
+            <label for="checkbox">Bling</label>
+
+        </div>
 
 		<!-- Your UI controls go here -->
 		
