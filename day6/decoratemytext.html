@@ -26,14 +26,20 @@
         <div style="margin: 15px;">
             <label for="textarea"> Enter text</label>
             <br>
-            <textarea rows=8 cols=25 id="textarea"></textarea>
+            <textarea rows=4 cols=10 id="textarea"></textarea>
         </div>
 
         <div style="border: 1px solid green; padding: 15px">
-            <button onclick="biggerText()">Bigger Decorations!</button>
+            <button onclick="biggerText()">Increment once</button>
             <br>
             <br>
-            <button onclick="incrementText()" style="font-size: 12pt;">Increment Decorations!</button>
+            <button onclick="incrementText()">+2pt increment</button>
+            <br>
+            <br>
+            <button onclick="intervalIncrement()">interval increment START</button>
+            <br>
+            <br>
+            <button onclick="intervalStop()">interval increment STOP</button>
             <br>
             <br>
 

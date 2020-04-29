@@ -3,9 +3,18 @@ function biggerText(){
 }
 
 function incrementText(){
-    var textSize = document.getElementById("textarea").style.fontSize;
-    var increasedSize = parseInt(textSize);
-    document.getElementById("textarea").style.fontSize=18+'pt';
+    var textSize = window.getComputedStyle(document.getElementById("textarea")).fontSize;
+    var increasedSize = parseInt(textSize)+2;
+    document.getElementById("textarea").style.fontSize=increasedSize+'pt';
+}
+
+function intervalIncrement(){
+    var intervalIncrease = setInterval(function(){incrementText()}, 2000);
+}
+
+function intervalStop(){
+    clearTimeout(intervalIncrease);
+
 }
 
 function alert(checkBoxElement){
