@@ -1,10 +1,5 @@
 window.onload = function(){
     "use strict";
 
-    var add = (function (){
-        var counter=0;
-        return function(){
-            return counter+=1;
-        }
-    })();
+    this.document.write("Write all your answers in a document (MS Word or PDF only) and submit by uploading to Sakai.");
 }
