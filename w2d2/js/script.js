@@ -80,9 +80,9 @@ window.onload = function(){
     
     const Person = function(){
         // note - no variable declaration for each variables.
-        let   name = "Bishwas",
-                age = "26",
-                salary = 150000;
+        let name = "Bishwas",
+            age = 26,
+            salary = 150000;
 
         function getName(){
             console.log(`Name: ${name}`);
@@ -113,8 +113,14 @@ window.onload = function(){
             setSalary(salary + ((percentage/100) * salary));
         }
 
+        function incrementAge(){
+            setAge(age+1);
+            console.log(age);
+        }
+
         return {
             increaseSalary: increaseSalary,
+            incrementAge: incrementAge
         };
     }();
 
@@ -128,5 +134,6 @@ window.onload = function(){
     document.write("<br><br>");
     document.write("[10] ( check console - F12 )");
     Person.increaseSalary(5);
+    Person.incrementAge();
 
 }
