@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./js/js.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav class="navbar navbar-dark bg-primary">
+            <div>
+                <p class="text-light">
+                    The South West - Regional Census | Home | Census Form
+                </p>
+            </div>
+            <span class="pull-right">
+                <span class="text-light">
+                    <p id="demo"></p>
+                    <script>
+                        var d = new Date();
+                        document.getElementById("demo").innerHTML = d;
+                    </script>
+                </span>
+            </span>
+        </nav>
+        <form style="padding-left: 20px">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="fullName">* Full Name:</label>
+                    <input type="text" class="form-control" id="fullName" aria-describedby="emailHelp" placeholder="Enter your full Name">
+                    <small id="dateSuppliedHelp" class="form-text text-muted">Enter your full nase as printed on your Government issued ID</small>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="citizenId">*Citizen ID</label>
+                    <input type="text" class="form-control" id="citizenId" aria-describedby="emailHelp" placeholder="XXXXXXXXXX">
+                    <small id="dateSuppliedHelp" class="form-text text-muted">Enter your 10-Digit Citizen ID</small>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="socialSecurity">*Social Security Number</label>
+                    <input type="text" class="form-control" id="socialSecurity" aria-describedby="emailHelp">
+                    <small id="dateSuppliedHelp" class="form-text text-muted">Enter your Social Security Number in the format shown</small>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="state">*State</label>
+                        <select id="state" class="form-control">
+                            <option>Arizona</option>
+                            <option>New Mexico</option>
+                            <option>Texas</option>
+                        </select>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="productName">*Senior Citizen?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="isSeniorTrue" value="True">
+                        <label class="form-check-label" for="isSeniorTrue">
+                          Yes
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="False">
+                        <label class="form-check-label" for="exampleRadios1">
+                          No
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <input type="button" value="Reset" class="btn btn-secondary btn-lg">
+                <input type="button" value="Submit" class="btn btn-primary btn-lg" onclick="myFunction()">
+            </div>
+        </form>
+
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Citizen ID</th>
+                <th scope="col">Social Security</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">State</th>
+                <th scope="col">Senior</th>
+              </tr>
+            </thead>
+            <tbody id="post">
+              <!-- <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+              </tr> -->
+            </tbody>
+          </table>
+
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+
+<!-- <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" placeholder="Email" id="exampleInputEmail1" class="form-control" aria-describedby="emailHelp">
+    <small class="form-text text-muted" id="emailHelp">We will never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+    <label for="exampleInputPassword1">Password
+    <input type="password" placeholder="Password" id="exampleInputPassword1" class="form-control">
+</div> -->
