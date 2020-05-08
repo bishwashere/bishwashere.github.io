@@ -9,5 +9,7 @@ services:
         context: ./src
     volumes:
       - ./src/myApp:/usr/local/tomcat/webapps/myApp
+      # Exclude this from volume.
+      - /usr/local/tomcat/webapps/myApp/WEB-INF/classes
     ports:
       - "80:8080"
