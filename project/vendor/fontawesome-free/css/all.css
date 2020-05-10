@@ -3240,22 +3240,27 @@ readers do not read off random characters that represent icons */
 .fa-sd-card:before {
   content: "\f7c2"; }
 
-.fa-search:before {
-  content: "\f002"; }
+.fa-deposit:before {
+  content: "\f4c0"; }
 
-.fa-search-dollar:before {
+.fa-withdraw:before {
+  content: "\f155"; }
+
+
+
+.fa-withdraw-dollar:before {
   content: "\f688"; }
 
-.fa-search-location:before {
+.fa-withdraw-location:before {
   content: "\f689"; }
 
-.fa-search-minus:before {
+.fa-withdraw-minus:before {
   content: "\f010"; }
 
-.fa-search-plus:before {
+.fa-withdraw-plus:before {
   content: "\f00e"; }
 
-.fa-searchengin:before {
+.fa-withdrawengin:before {
   content: "\f3eb"; }
 
 .fa-seedling:before {
