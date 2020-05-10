@@ -3241,12 +3241,10 @@ readers do not read off random characters that represent icons */
   content: "\f7c2"; }
 
 .fa-deposit:before {
-  content: "\f4c0"; }
+  content: "\f062"; }
 
 .fa-withdraw:before {
-  content: "\f155"; }
-
-
+  content: "\f063"; }
 
 .fa-withdraw-dollar:before {
   content: "\f688"; }
