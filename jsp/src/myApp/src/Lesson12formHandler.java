@@ -24,6 +24,11 @@ public class Lesson12formHandler extends HttpServlet{
             // forward back to the form servlet
             request.getRequestDispatcher("/ContactForm").forward(request, response);
         } else{
+            // get and set in session
+            HttpSession session = request.getSession(true);
+            session.setAttribute("shoppingCartName", fullName+ "'s shopping cart");
+
+
             // go to greeting page
             String url ="lesson12greeter?fullName=" + fullName;
             response.sendRedirect(url); //HTTP response code 302

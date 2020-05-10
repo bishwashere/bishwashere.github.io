@@ -36,6 +36,9 @@ public class ContactFormServlet extends HttpServlet {
         out.println("</header>");
         out.println("</nav>");
         out.println("<main style='margin-right:10%; margin-left:10%'>");
+        ServletContext context = request.getServletContext();
+        context.setAttribute("AppName", "Lesson 12");
+
         out.println("<form method='POST' action='Lesson12formHandler'>");
         Object objErrMsg = request.getAttribute("errMsg");
         if(objErrMsg != null){
@@ -46,7 +49,7 @@ public class ContactFormServlet extends HttpServlet {
         out.println("<div class='form-row'>");
         out.println("<div class='form-group col-md-12'>");
         out.println("<label for='fullName'>*Name</label>");
-        out.println("<input type='text' class='form-control' id='fullName' aria-describedby='emailHelp' placeholder='e.g: John Smith'>");
+        out.println("<input type='text' class='form-control' id='fullName' name='fullName' aria-describedby='emailHelp' placeholder='e.g: John Smith'>");
         out.println("</div>");
         out.println("</div>");
         out.println("<div class='form-group col-md-3'>");

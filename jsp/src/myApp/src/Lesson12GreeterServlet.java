@@ -17,6 +17,9 @@ public class Lesson12GreeterServlet extends HttpServlet {
         String fullName = request.getParameter("fullName");
         StringBuilder sb = new StringBuilder();
         sb.append("<h3> Hello, " + fullName + "</h3>");
+        sb.append((String)request.getSession().getAttribute("shoppingCartName"));
+        sb.append("<br>");
+        sb.append((String)request.getServletContext().getAttribute("AppName"));
         response.setContentType("text/html");
         response.getWriter().println(sb.toString());
     }
