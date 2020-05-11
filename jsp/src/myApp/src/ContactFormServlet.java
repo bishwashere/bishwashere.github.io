@@ -86,7 +86,7 @@ public class ContactFormServlet extends HttpServlet {
         out.println("");
         out.println("</div>");
         out.println("</div>");
-        out.println("<p> Hit count for this page: 19</p>");
+        out.println("<p> Hit count for this page: " + (Integer)request.getServletContext().getAttribute("totalHitCount")+"</p>");
         out.println("</form>");
         out.println("</main>");
         out.println("<footer>");
