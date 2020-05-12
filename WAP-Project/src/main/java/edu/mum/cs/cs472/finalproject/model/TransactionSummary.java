@@ -29,6 +29,18 @@ public class TransactionSummary implements Serializable {
         @Column(name = "amount")
         private double amount;
 
+        @ManyToOne
+        @JoinColumn(name = "user_id")
+        private User user;
+
+        public User getUser() {
+                return user;
+        }
+
+        public void setUser(User user) {
+                this.user = user;
+        }
+
         @Column(name = "transaction_date")
         private Date transactionDate;
 
