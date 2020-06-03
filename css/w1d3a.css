@@ -1,0 +1,195 @@
+/* #outer {
+    border: 2px dashed black;
+    padding: 10px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 10px;
+  } */
+
+#outer {
+    border: 2px dashed black;
+    overflow: hidden;
+    padding: 10px;
+    /* display: block; */
+    
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+    margin: 10px;
+    float: left;
+    /* display: block; */
+}
+
+.clear{
+    clear: both;
+}
+
+ul {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  li {
+    display: inline;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+  }
+
+
+/* ul {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  li {
+    display: inline;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+  } */
+
+  #container {
+    background-color: lightgray;
+    overflow: hidden;
+    padding: 10px;
+    width: 500px;
+  }
+  #column1, #column2 {
+    background-color: lightblue;
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+  }
+  h1 {
+    background-color: yellow;
+  }
+
+  .a, .b {
+	width: 100px;
+	height: 100px;
+	font: 30pt bold Helvetica, Arial, sans-serif;
+	line-height: 100px;
+	text-align: center;
+}
+
+.a {
+	background-color: lightblue;
+}
+
+.b {
+	background-color: pink;
+}
+
+.c {
+	background-color: lightgray;
+}
+
+/* .ex {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.ex > div{
+    width: 400px;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    overflow: scroll;
+    height: 335px;
+
+}
+
+.ex1 .a {
+        float: left;
+}
+.ex1 .b {
+        float: right;
+}
+
+.ex2 .a {
+    float: left;
+}
+.ex2 .b {
+    float: right;
+    /* clear: left; */
+}
+
+.ex3 .a {
+    float: left;
+}
+.ex3 .b {
+    float: right;
+    clear: left;
+}
+.ex3 .c{
+    clear: left;
+    text-align: right;
+}
+
+.ex4 .a {
+    float: left;
+  }
+.ex4 .b {
+    float: right;
+    clear: left;
+  }
+.ex4 .c{
+    text-align: right;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ex5 .a {
+    float: right;
+  }
+.ex5 .b {
+    float: left;
+  }
+.ex5 .c{
+    float: left;
+    text-align: center;
+    width: 100px;
+}
+
+.ex6 .a {
+    float: right;
+  }
+ .ex6 .b {
+    position: relative;
+    top: 50px;
+    left: 220px;
+  } 
+
+
+.ex6 .c{
+    clear: right;
+    text-align: center;
+    margin-right: 100px;
+  }
+
+.ex7 .a, .ex7 .b {
+    float: left;
+  }
+.ex7 .c{
+    margin-left: 200px;
+}
+   
+.ex8 .a {
+    float: left;
+}
+
+.ex9 .a, .ex9 .b { float: left; }
+.ex9 .c{ margin-top: 100px; }
+.ex9 .d {
+  height: 100px;
+}
