@@ -1,0 +1,140 @@
+
+/**
+ * Profile image component
+ */
+.profile-header-container{
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+}
+
+.profile-header-img {
+    padding: 5px;
+}
+
+.profile-header-img > img.img-circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #51D2B7;
+}
+
+.profile-header {
+    margin-top: 20px;
+}
+
+.mood-img  {
+    width: 30px;
+    height: 32px;
+}
+
+.html-check {
+    position: relative;
+    margin-left: 200px;
+    display: inline-block;
+}
+/**
+ * Ranking component
+ */
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align
+    : center;
+}
+
+.rank-label-Header {
+    margin-top: 19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: rgb(81, 210, 183);
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
+}
+
+.w3-container:after{content:"";display:table;clear:both}
+.w3-teal{color:#fff!important;background-color:#009688!important}
+.w3-half-left{
+    width:49.66666%;
+    float: left;
+}
+.w3-half-right{
+    width:49.66666%;
+    float: right;
+}
+.w3-full{
+    width:99.66666%;
+}
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
+.w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+
+.img-home{ 
+    float: right;
+    margin-right: 10px;
+}
+
+.header-title{ 
+font-size: 26px;
+}
+
+.home{ 
+    float: right;
+    margin-right: 10px;
+    color:#fff
+}
+
+.column {
+    float: left;
+    padding: 20px;
+  }
+
+  .header-title-description {
+    padding: 50px;
+  }
+
+.comment-body {
+	margin-bottom: 52px;
+	border: 1px solid #e4d9d1;
+    padding: 15px;
+    margin-left: 52px;
+    margin-right: 52px;
+}
+
+.comment-body .avatar {
+	height: 20px;
+}
+
+.comment-body .comment-meta {
+	border-bottom: 1px solid #e4d9d1;
+	vertical-align: middle;
+}
+  
+
+.footer {
+	background-color: #292c2f;
+	color: #fff;
+	text-align: center;
+	padding: 45px;
+}
+  /* Clear floats after the columns */
+  .html-footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    height: 55px;
+    background-color:#fff!important
+}
+.html-validator  {
+    height: 50px;
+    margin-left: 350px;;
+}
+
+.fix-header{
+    background-color: black;
+    height: 50px;
+    top: 0px;
+    position: relative;
+}
